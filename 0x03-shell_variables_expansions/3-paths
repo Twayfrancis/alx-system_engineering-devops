@@ -1,2 +1,2 @@
 #!/bin/bash
-echo PATH | tr ':' '\n' | cut -d'/' -f2 -s | wc -1
+echo $PATH | tr ':' '\n' | cut -d'/' -f2 -s | wc -1
