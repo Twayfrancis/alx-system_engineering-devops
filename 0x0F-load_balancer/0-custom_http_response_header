@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# Automatizing the nginx configurations
-sudo apt-get update
+# Automatizing the nginx configuration
+sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo service nginx start
-sudo sed -i "/http {/a\         add_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
-echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html
+sudo sed -i "15i \\\tadd_header X-Served-By 1574-web-01;" /etc/nginx/nginx.conf
+sudo sed -i "/http {/a\         add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-enabled/default
 sudo service nginx restart
