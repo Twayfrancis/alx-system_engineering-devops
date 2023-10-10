@@ -8,7 +8,7 @@ import requests
 def top_ten(subreddit):
     """function queries reddit API and prints titles of first 10 posts"""
 
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
+    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     headers = {'User-Agent': 'My user Agent 1.0'}
     response = requests.get(url, headers=headers, allow_redirects=False)
 
