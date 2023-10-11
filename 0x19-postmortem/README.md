@@ -32,3 +32,15 @@ Nginx to crash when it recieved a certain type of HTTP request.
 
 2. The load balancer misconfiguration led to an uneven distribution of traffic, overloading one server and causing a cascade failure.Load balancer settings were reconfigured to ensure even traffic
 distribution, preventing future overloads.
+
+**Corrective and Preventative Measures**
+*Improvements/Fixes*
+1. Implement automated load testing to simulate high traffic scenarios and identify potential weaknesses.
+2. Regularly review and update load balancer configurations to align with evolving traffic patterns.
+3. Enhance monitoring to provide more granular insights into server loads and distribution.
+4. Implementing a new process for testing changes to our Nginx server configuration before they are deployed to production.
+
+**Task**
+1. Develop and implement a load balancer configuration checklist for new deployments.
+2. Conduct a comprehensive review of monitoring alerts and thresholds for early detection of anomalies.
+
